@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Avenir");
+
+@media screen and (max-width: 992px) {
+    .float-style {
+        height: auto !important;
+    }
+    .bg-gradient {
+        display: none !important;
+    }
+
+    .later-shown {
+        display: block !important;
+    }
+
+    .right-top {
+        margin-top: 20px !important;
+    }
+
+    .left-img-top {
+        margin-top: 5vh !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .right-top {
+        max-width: 80% !important;
+        min-width: 250px !important;
+    }
+
+    input, .btn-login, .deliver-login-bg {
+        min-width: 250px !important;
+    }
+}
+
+/**
+ * main
+ */
+* {
+    box-sizing: border-box;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.float-style {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.bg-gradient {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100vh;
+
+    background-image: linear-gradient(52deg,  #00ccbc 55%, #ffffff 40%);
+}
+
+.later-shown {
+    display: none;
+    font-size: 0.8rem;
+}
+
+.middle-txt {
+    font-size: 1.1rem;
+}
+
+.bg-gradient-hidden {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-image: linear-gradient(13deg,  #00ccbc 40%, #ffffff 40%);
+}
+
+.deliver-login-bg {
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    max-height: 60%;
+    min-width: 400px;
+    text-align: center !important;
+}
+
+.left-img-top {
+    margin-top: 37vh;
+}
+
+.middle-center {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.left-txt-width {
+    margin-top: 150px;
+    margin-left: 30%;
+    width: 40%;
+    font-size: 0.85rem;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.txt-white-bold {
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.right-top {
+    margin: 20vh auto 0;
+    width: 100%;
+    max-width: 45%;
+    min-width: 400px;
+}
+
+.logo-size {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 30%;
+}
+
+.txt-black-bold {
+    padding-bottom: 5px;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.txt-bold {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    margin: 0 auto;
+    padding-left: 45px;
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    width: 100%;
+    max-width: 85%;
+    min-width: 300px;
+    height: 35px;
+
+    font-size: 0.9rem !important;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+input:hover {
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px 2px rgba(0, 204, 188, 0.7);
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.mail-input, .password-input {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left 10px center;
+}
+
+.mail-input {
+    background-image: url('mail.png');
+}
+
+.password-input {
+    background-image: url('password.png');
+}
+
+.btn-login {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 3px 0;
+    border: 2px solid #00ccbc;
+    border-radius: 5px;
+
+    width: 100%;
+    max-width: 85%;
+    min-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+
+    color: #ffffff;
+    background-color: #00ccbc;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    border: 2px solid #00dfbc;
+    color: #eeeeee;
+    background-color: #00dfbc;
+}
+
+.forgot-psw {
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #00ccbc;
+    cursor: pointer;
+}
